@@ -25,7 +25,7 @@ while play_again=='yes':
         print('computer:' + computer_ans + ' vs ' + 'you:' + answer)
         print('you win')
     
-    if (answer!='scissors') and (answer != 'rock') and (answer!='paper'): #Define if your answer is not valid
+    elif (answer!='scissors') and (answer != 'rock') and (answer!='paper'): #Define if your answer is not valid
         print('computer:' + computer_ans + ' vs ' + 'you:' + answer)
         print('That\'s not a valid answer')
         
