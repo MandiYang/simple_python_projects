@@ -7,21 +7,21 @@ while play_again=='yes':
       'Choose your weapon below') 
     answer = input('\n rock \n scissors \n paper \n: ') #Asking for weapons to use(answer)
     computer_ans = random.choice(alternatives)
-    
-    if answer==computer_ans:       #Define if it becomes tie
+    #Define if it becomes tie
+    if answer==computer_ans:       
         print('computer:' + computer_ans + ' vs ' + 'you:' + answer)
         print('tie')
-        
-    if (computer_ans=='rock' and answer=='scissors') \  #Define if you loose
-        or (computer_ans=='scissors' and answer=='paper') \
-        or (computer_ans=='paper' and answer=='rock'):
+    #Define if you loose    
+    if (computer_ans=='rock' and answer=='scissors') \
+       or (computer_ans=='scissors' and answer=='paper') \
+       or (computer_ans=='paper' and answer=='rock'):
         print('computer:' + computer_ans + ' vs ' + 'you:' + answer)
         print('you loose')
     
-    
-    if (computer_ans=='scissors' and answer=='rock') \ #Define if you win
-        or (computer_ans=='paper' and answer=='scissors') \
-        or (computer_ans=='rock' and answer=='paper'):
+    #Define if you win
+    if (computer_ans=='scissors' and answer=='rock') \
+       or (computer_ans=='paper' and answer=='scissors') \
+       or (computer_ans=='rock' and answer=='paper'):
         print('computer:' + computer_ans + ' vs ' + 'you:' + answer)
         print('you win')
     
@@ -30,7 +30,8 @@ while play_again=='yes':
         print('That\'s not a valid answer')
         
     
-    play_again=input('play_again? yes=yes/no: ')  #Ask to play agian(yes or no)
+    play_again=input('play_again? yes/no: ')  #Ask to play agian(yes or no)    
+
     
 
 
