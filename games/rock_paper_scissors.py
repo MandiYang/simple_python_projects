@@ -42,6 +42,9 @@ while play_again=='yes':
 
 
     
-
+"""TIPS for people to make the project better"""
+#1. Make it to a gui program
+#2. Add more weapons
+#3. Make the code shorter
 
     
